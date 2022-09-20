@@ -45,7 +45,7 @@
                 <li
                     class="tasks__item js-task"> 
                     <button class="tasks__button tasks__button--done js-toggleDone"> ${task.done ? "✓" : ""}</button>
-                    <span class="tasks__content${task.done ? " tasks__content--done" : ""}" > ${ task.content }</span >
+                    <span class="tasks__content${task.done ? " tasks__content--done" : ""}" > ${task.content}</span >
                     <button class="tasks__button tasks__button--remove js-remove">
                         🗑
                     </button >
@@ -53,7 +53,7 @@
              
             `;
         }
-    
+
         document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
 
         bindRemoveEvents();
@@ -69,7 +69,7 @@
             addNewTask(newTaskContent);
             newTaskElement.value = "";
         }
-        
+
         newTaskElement.focus();
 
     };
@@ -80,9 +80,9 @@
         const form = document.querySelector(".js-form");
         form.addEventListener("submit", onFormSubmit);
     };
-    
+
     init();
-    
+
     function newFunction() {
         return ";";
     }
