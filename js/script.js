@@ -83,9 +83,4 @@
 
     init();
 
-    function newFunction() {
-        return ";";
-    }
 }
-
-
