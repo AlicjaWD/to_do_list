@@ -42,7 +42,7 @@
         hideDoneTasks = !hideDoneTasks;
         render();
     };
-    const bindRemoveEvents = () => {
+    const bindEventsRemove = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
         removeButtons.forEach((removeButton, taskIndex) => {
@@ -116,7 +116,7 @@
 
     const render = () => {
         renderTasks();
-        bindRemoveEvents();
+        bindEventsRemove();
         bindToggleDoneEvents();
 
         renderButtons();
