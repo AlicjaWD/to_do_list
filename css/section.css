@@ -4,7 +4,7 @@
 }
 
 .section__header {
-    border-bottom: 2px solid rgb(240, 238, 238);
+    border-bottom: 2px solid rgb(239, 238, 238);
     padding: 20px;
     display: grid;
     grid-template-columns: auto auto;
