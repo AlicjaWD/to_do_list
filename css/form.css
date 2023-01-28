@@ -1,5 +1,4 @@
 .form {
-    padding: 20px;
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 5px;
@@ -21,14 +20,17 @@
     padding: 20px;
     color: white;
     background-color: teal;
+    transition: 0.3s;
 }
 
 .form__button:hover {
-    background-color: rgb(6, 156, 156)
+    background-color: rgb(6, 156, 156);
+    transform: scale(1.1);
 }
 
 .form__button:active {
     background-color: rgb(10, 187, 187);
+
 }
 
 .legend__list {
