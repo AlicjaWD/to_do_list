@@ -1,7 +1,7 @@
 .form {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 5px;
+    grid-gap: 20px;
 }
 
 @media(max-width:767px) {
@@ -11,13 +11,13 @@
 }
 
 .form__field {
-    padding: 20px;
+    padding: 10px;
     border: 1px solid rgb(240, 238, 238);
 }
 
 .form__button {
     border: none;
-    padding: 20px;
+    padding: 10px;
     color: white;
     background-color: teal;
     transition: 0.3s;
