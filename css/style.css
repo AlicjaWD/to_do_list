@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    background: rgb(240, 238, 238);
 }
 
 *, ::after, ::before {
@@ -7,10 +8,9 @@ html {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(240, 238, 238);
     color: black;
 }
