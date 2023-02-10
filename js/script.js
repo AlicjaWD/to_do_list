@@ -42,6 +42,7 @@
         hideDoneTasks = !hideDoneTasks;
         render();
     };
+
     const bindEventsRemove = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
@@ -54,8 +55,7 @@
 
 
     const bindToggleDoneEvents = () => {
-        const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
-
+        const toggleDoneButtons = document.querySelectorAll(".js-toggleDone")
         toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
             toggleDoneButton.addEventListener("click", () => {
                 toggleTaskDone(taskIndex);
@@ -105,10 +105,13 @@
 
     const bindButtonsEvents = () => {
         const markAllDoneButton = document.querySelector(".js-markAllDone");
+
         if (markAllDoneButton) {
             markAllDoneButton.addEventListener("click", markAllTasksDone);
         }
+
         const toggleHideDoneTasksButton = document.querySelector(".js-toggleHideDoneTasks");
+
         if (toggleHideDoneTasksButton) {
             toggleHideDoneTasksButton.addEventListener("click", toggleHideDoneTasks);
         }
